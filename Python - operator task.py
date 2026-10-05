@@ -100,6 +100,15 @@ print("Your Emp_Name is : " , Emp_Name, "Emp_id is :" , Emp_id , "Department is 
 # - City
 # - Profession
 # Print a complete introduction using the entered values.
+First_name = input("Enter Your First Name : ")
+Last_name = input("Enter Your Last Name : ")
+City = input("Enter Your City : ")
+Profession = input("Enter Your Profession : ")
+
+Print()
+
+
+
 # 4. Two Numbers
 # Take two numbers from the user and store them in two variables. Print both values.
 # Example:
