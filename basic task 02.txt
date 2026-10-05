@@ -1,0 +1,71 @@
+for batch 1342 python : 
+
+
+Python Practice â€” Variables + input() + print()
+1. Student Information
+Take the following information from the user and print it:
+- Name
+- Age
+- College name
+- Course
+2. Employee Details
+Take input for:
+- Employee name
+- Employee ID
+- Department
+- Salary
+Print all employee details in a proper format.
+3. Personal Introduction
+Take input for:
+- First name
+- Last name
+- City
+- Profession
+Print a complete introduction using the entered values.
+4. Two Numbers
+Take two numbers from the user and store them in two variables. Print both values.
+Example:
+Enter first number: 25
+Enter second number: 15
+
+First Number = 25
+Second Number = 15
+
+5. Basic Addition
+Take two numbers from the user and calculate their addition.
+Example:
+Enter first number: 20
+Enter second number: 30
+
+Addition = 50
+
+6. Student Marks
+Take marks of three subjects from the user and calculate:
+- Total marks
+- Average marks
+Print the result.
+7. Rectangle Calculation
+Take length and width from the user and calculate:
+- Area
+- Perimeter
+8. Salary Calculation
+Take the following from the user:
+- Basic salary
+- HRA
+- DA
+Calculate and print the total salary.
+9. Shopping Bill
+Take input for:
+- Product name
+- Price
+- Quantity
+Calculate and print the total amount.
+Example:
+Product: Pen
+Price: 20
+Quantity: 5
+
+Total Amount = 100
+
+10. Temperature Conversion 
+Take temperature in Celsius from the user and convert it into Fahrenheit.
