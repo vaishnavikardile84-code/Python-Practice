@@ -1,3 +1,28 @@
+
+# `student_id, student_name, email, phone, date_of_birth, gender, course, city, admission_date, percentage`
+
+student_id = int(input("Enter Student id :"))
+student_name = input("Enter your name : ")
+Email = input("Enter Your Email  : ")
+Phone = (input("Enter Your Phone No : "))
+Date_of_birth = (input("Enter your Date_of_Birth : "))
+Gender = input("Enter your gender : ")
+Course = input("Enter Your  Course:")
+City = input("Enter Your city :")
+Admission_date = input("Enter your admission date : ")
+percentage = float(input("Enter your percentage : "))
+
+
+print("Your id is : ",student_id)
+print("Your name is : " , student_name)
+print(Email)
+print(Phone)
+print(Date_of_birth , sep = '-')
+print(Course)
+print(Gender,Course,City,Admission_date, sep = '\n')
+print(percentage , end = "%")
+
+
 #------------------------------------------------------SATURDAY TASK-----------------------------------------------------------------------------------------
 
 # <!-- for batch 1342 python : 
