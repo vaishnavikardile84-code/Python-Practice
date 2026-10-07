@@ -520,4 +520,99 @@ sql_score = 62
 
 print(age >= 21 and age <= 30 and python_score >= 70 and sql_score >= 60)
 
+# Take two numbers from the user and check whether they are equal
+a = int(input("Enter A : "))
+b = int(input("Enter B : "))
+
+print("A is equals to B : ",a == b)
+print("A is not equals to B : ", a != b)
+
+# Take two numbers and check which comparison results are True.
+a = int(input("Enter A : "))
+b = int(input("Enter B : "))
+
+print("A is equals to B : " , a ==b )
+print("A is not equals to B : " , a != b )
+print("A is greter than B : " , a > b )
+print("A is less to B : " , a < b )
+print("A is greter equals to B : " , a >=b )
+print("A is less equals to B : " , a <= b )
+
+# Take a person's age and check whether the age is greater than 18
+age = int(input("Enter Your age : ") )
+
+print("Your ages is greter than 18 ", age > 18)
+print("Your ages is greter not than 18 ", age < 18)
+
+# Take two numbers and check whether they are different.
+
+a = int(input("Enter A : "))
+b = int(input("Enter B : "))
+
+print("num same : ", a == b)
+print("num different : ", a != b)
+
+# Take a student's marks and check whether marks are greater than or equal to 40.
+
+a = int(input("Enter marks a : "))
+b = int(input("Enter marks b : "))
+
+print("marks are greter : " , a > 40 )
+print("marks are equals : " , a == 40)
+
+# Take two numbers and display the result of all six comparison operators.
+a = int(input("Enter marks a : "))
+b = int(input("Enter marks b : "))
+
+print("a is greter than b " , a > b)
+print("a is less than b " , a < b)
+print("a is greter than or equals to b " , a >= b)
+print("a is less than or equals to b " , a <= b)
+print("a is equals to b " , a == b)
+print("a is not equals to b " , a != b)
+
+# Practise Questions on logical Operator : 
+
+a = 10 
+b = 20 
+print(a > b and b > 15) #false
+
+#Q
+a = 10
+b = 20
+print(a > b or b > 15) #True
+
+#Q
+a = 10
+b = 20
+print(not(a > b)) #True
+
+# Q4
+age = 25
+print(age >= 18 and age <= 60) #True
+
+# Q5 
+
+marks = 35
+
+print(marks >= 40 or marks == 35) #True
+# Q6 Take age and salary from the user and check:
+# age >= 18 AND salary >= 20000
+
+age = int(input("Enter age : "))
+salary = int(input("Enter salary : "))
+
+print(age >= 18 and salary >= 20000) 
+# AND salary >= 20000)
+
+
+# Q7 Take two numbers from the user and check whether:
+#    first number is greater than 10 OR
+#    second number is greater than 10 
+
+a = int(input("Enter number a : "))
+b = int(input("Enter number b : "))
+
+print(a>10 or b >10 )
+
 
