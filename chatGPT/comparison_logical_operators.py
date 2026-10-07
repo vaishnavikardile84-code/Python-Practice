@@ -154,7 +154,11 @@ python_score = 76
 sql_score = 65
 powerbi_score = 68
 excel_score = 85
-print ( "que 8 ")
 
-print(age >= 18 and python_score > 70 and sql_score > 60 or powerbi_score > 80)
 
+print(
+    age >= 18
+    and python_score >= 70
+    and sql_score >= 60
+    and (powerbi_score >= 70 or excel_score >= 80)
+)
