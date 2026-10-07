@@ -112,7 +112,7 @@ age = 24
 python_score = 75
 sql_score = 62
 
-print(age > 21 and age < 30 and python_score >= 70 and sql_score == 62 )
+print(age > 21 and age < 30 and python_score >= 70 and sql_score >= 60 )
 
 # **Q9. Bank Loan — Tricky**
 # A person can get a loan if **either**:
@@ -130,7 +130,10 @@ print(age > 21 and age < 30 and python_score >= 70 and sql_score == 62 )
 
 # Check whether the person is eligible.
 
-# ---
+salary  = 42000
+credit_score = 750 
+
+print(salary >= 50000 and credit_score >= 750)
 
 # **Q10. Internship Selection — Advanced 🔥**
 # A company selects a student if:
@@ -145,29 +148,13 @@ print(age > 21 and age < 30 and python_score >= 70 and sql_score == 62 )
 
 #   * Power BI score is **70 or more**
 #   * **OR** Excel score is **80 or more**
-
-# Given:
-
 # ```python
-# age = 21
-# python_score = 76
-# sql_score = 65
-# powerbi_score = 68
-# excel_score = 85
-# ```
+age = 21
+python_score = 76
+sql_score = 65
+powerbi_score = 68
+excel_score = 85
+print ( "que 8 ")
 
-# Write **ONE condition** to check whether the student is selected.
+print(age >= 18 and python_score > 70 and sql_score > 60 or powerbi_score > 80)
 
-# ---
-
-# ### Your focus 🎯
-
-# For every question, first translate the English:
-
-# **“and” → `and`**
-# **“or” → `or`**
-# **“18 or older” → `>= 18`**
-# **“60 or more” → `>= 60`**
-# **“between 21 and 30” → `21 <= age <= 30`**
-
-# Start with **Q1–Q3 only**. Don't look for solutions—write them yourself and send them here. I'll check them.
