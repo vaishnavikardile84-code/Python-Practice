@@ -1,0 +1,9 @@
+{
+    "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.extendedRange": false,
+    "github.copilot.nextEditSuggestions.fixes": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.suggest.selectionMode": "never",
+    "editor.suggestOnTriggerCharacters": false
+}
