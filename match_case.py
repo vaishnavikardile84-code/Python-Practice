@@ -90,7 +90,7 @@ match number :
 
 Plan_Code = int(input("Enter a number :"))
 
-match number :
+match Plan_Code :
     case 1 :
         print("Your plan includes 1 GB per day")
     case 2 :

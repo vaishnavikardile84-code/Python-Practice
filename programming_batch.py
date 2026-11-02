@@ -31,7 +31,7 @@ reverse = 0
 
 
 i = 0
-while num len(a):
+while num len(num):
     
     digit =  num % 10  
     reverse = reverse * 10 + digit 
