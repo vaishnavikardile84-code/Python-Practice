@@ -585,7 +585,8 @@ for i in range(1,20):
 # 23. Print numbers from 1 onwards and stop when the number reaches 10 using `break`.
 for i in range(0,0):
     if i == 10:
-        print(i)
+        break
+    print(i)
 
 # 24. Print this pattern:
 for i in range(1, 6):
@@ -679,83 +680,83 @@ print(s)
 strr = "  VASIH         "
 print(strr.strip())
 
-# # **C. Lists and tuples**
+# **C. Lists and tuples**
 
-# # 17. Create a list of five numbers and print each element using indexing.
+# 17. Create a list of five numbers and print each element using indexing.
+li = [ 12,45,56,33,23]
+for i in range(len(li)):
+    print(li[i])
+# 18. Add two new elements to a list using `append()` and `extend()`.
+li = [ 12,45,56,33,23]
+li.append(34)
+print(li)
+
+li.extend([56,65,78])
+print(li)
+
+# 19. Remove an element using `remove()` and another using `pop()`.
+
+# li.remove(45)
+li.pop(2)
+print(li)
+
+
+
+# # 20. Find the largest, smallest and sum of all elements in a list.
 # li = [ 12,45,56,33,23]
-# for i in range(len(li)):
-#     print(li[i])
-# # 18. Add two new elements to a list using `append()` and `extend()`.
-# li = [ 12,45,56,33,23]
-# li.append(34)
-# print(li)
+# print(sum(li))
+# print(max(li))
 
-# li.extend([56,65,78])
-# print(li)
+# print(min(li))
 
-# # 19. Remove an element using `remove()` and another using `pop()`.
+# 21. Create a list and print its elements in reverse order using slicing.
+li = [ 12,45,56,33,23]
 
-# # li.remove(45)
-# li.pop(2)
-# print(li)
-
-
-
-# # # 20. Find the largest, smallest and sum of all elements in a list.
-# # li = [ 12,45,56,33,23]
-# # print(sum(li))
-# # print(max(li))
-
-# # print(min(li))
-
-# # 21. Create a list and print its elements in reverse order using slicing.
-# li = [ 12,45,56,33,23]
-
-# print(li[::-1])
+print(li[::-1])
     
-# # 22. Create a tuple of five elements and access 
-# # its second and last elements.
+# 22. Create a tuple of five elements and access 
+# its second and last elements.
 
-# tup = (12,43,22,1,1)
+tup = (12,43,22,1,1)
 
-# print(tup[2])
-# print(tup[-1])
+print(tup[2])
+print(tup[-1])
 
-# # 23. Create a tuple and unpack its values into separate variables.
-# tup = (12,43,22,1,1)
+# 23. Create a tuple and unpack its values into separate variables.
+tup = (12,43,22,1,1)
 
-# first, * middle , last = tup
+first, * middle , last = tup
 
-# print(first)
-# print(last)
-# print(middle)
+print(first)
+print(last)
+print(middle)
 
-# # 24. Create a set containing duplicate numbers and 
-# # demonstrate how duplicates are handled. Then perform union and # intersection on two sets
+# 24. Create a set containing duplicate numbers and 
+# demonstrate how duplicates are handled. Then perform union and # intersection on two sets
 
-# # Demonstrate duplicate removal
-# s1 = {12, 56, 12, 98, 12}
+# Demonstrate duplicate removal
+s1 = {12, 56, 12, 98, 12}
 
-# print(s1)
+print(s1)
 
-# # Create another set
-# s2 = {56, 78, 98, 100}
+# Create another set
+s2 = {56, 78, 98, 100}
 
-# # Union
-# print("Union:", s1.union(s2))
+# Union
+print("Union:", s1.union(s2))
 
-# # Intersection
-# print("Intersection:", s1.intersection(s2))
+# Intersection
+print("Intersection:", s1.intersection(s2))
 
-# # 25. Create a dictionary of five students and their marks. 
-# # Add a new student, update one student's marks, print all keys and values, 
-# # and find the student with the highest marks.
+# 25. Create a dictionary of five students and their marks. 
+# Add a new student, update one student's marks, print all keys and values, 
+# and find the student with the highest marks.
 
-# dic = {"vaish": 98 , "nick" : 78, "alice" : 87}
+dic = {"vaish": 98 , "nick" : 78, "alice" : 87}
 
-# print(dic.update({"danny: 84"}))
-# # Find the student with the highest marks
-# highest = max(dic, key=dic.get)
+print(dic.update({"danny: 84"}))
+# Find the student with the highest marks
+highest = max(dic, key=dic.get)
 
-# print("Highest scorer:", highest)
-# print("Marks:", dic[highest])
+print("Highest scorer:", highest)
+print("Marks:", dic[highest])
