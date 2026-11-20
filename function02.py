@@ -96,7 +96,8 @@ def order_details():
     
     def update_ordrs():
         nonlocal price
-        price = price + 45000
+        price = 45000
+        print(product)
         print(price)
         
     update_ordrs()     
@@ -131,15 +132,15 @@ def bank_account():
     def deposit():
         nonlocal balance
         balance = balance + 2000
-        def withdraw():
+    def withdraw():
             nonlocal balance
             balance = balance - 1000
-            def check_balance():
+    def check_balance():
                 print(balance)
                 
-            check_balance()        
-        withdraw()
+    check_balance()        
+    withdraw()
     deposit()
-bank_account()    
+    bank_account()    
 
 # Use the appropriate keyword wherever required.
