@@ -1,14 +1,3 @@
-# ==========================================
-# PYTHON FUNCTION PRACTICE
-# Topics:
-# 1. Positional Arguments
-# 2. Keyword Arguments
-# 3. Nested Functions
-# 4. Local Variables
-# 5. Global Variables
-# ==========================================
-
-
 # Q1. STUDENT INFORMATION
 # Create a function named student_info().
 # Accept name, age, and course as parameters.
