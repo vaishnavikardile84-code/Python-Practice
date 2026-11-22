@@ -101,7 +101,7 @@ class BankAccount:
         print("Deposited:", amount)
 
     def withdraw(self, amount):
-        if amount <= self.balance:
+        if self.balance >= amount:
             self.balance -= amount
             print("Withdrawal successful:", amount)
         else:
