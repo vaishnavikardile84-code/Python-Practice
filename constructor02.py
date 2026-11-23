@@ -311,5 +311,4 @@ vehicle1.update_price(1100000)
 print("Updated Vehicle Price:", vehicle1.vehicle_price)
 
 print("Total Vehicles:", Vehicle.vehicle_count)   
-            
-    
+
