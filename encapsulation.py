@@ -1,205 +1,205 @@
-# # PYTHON – ENCAPSULATION PRACTICE
+# PYTHON – ENCAPSULATION PRACTICE
 
-# # Q1. Student Class
-# Create a Student class with:
-# - Public variable: name
-# - Private variable: __marks
-# - Create an object and display both values.
-class Student:
-    def __init__(self, name, mark):
-        self.__name = name
-        self.__mark = mark
-        
-    def get_marks(self):    
-        return self.__mark
-    
-s1 = Student("Vaishnavi",98)
-print(s1.get_marks())
+# Q1. Student Class
+
+class StudentQ1:
+
+    def __init__(self, name, marks):
+        self.name = name
+        self.__marks = marks
+
+    def get_marks(self):
+        return self.__marks
 
 
-# print(s1.__name)
-# print(s1.get_marks())
+s1 = StudentQ1("Vaishnavi", 98)
 
-  
-# # Q2. Employee Class
-# Create an Employee class with:
-# - Public variable: name
-# - Protected variable: _department
-# - Private variable: __salary
-# - Display all three variables using an object.
+print("Name:", s1.name)
+print("Marks:", s1.get_marks())
 
-class Employee:
-    def __init__(self,name, department, salary):
+
+# Q2. Employee Class
+
+class EmployeeQ2:
+
+    def __init__(self, name, department, salary):
         self.name = name
         self._department = department
         self.__salary = salary
-        
-    def display(self):
-        return self.name    
-        
-s1=Employee("Ayana","Finance",45000)
-print(s1.name)
-# print(s1._department)
-# print(s1.__salary)       
-        
-        
-# # Q3. Private Variable
-# Create a BankAccount class.
-# - Declare a private variable __balance = 5000.
-# - Create an object.
-# - Try accessing __balance directly outside the class.
-# - Observe the output or error.
 
-class BankAccount:
-    
-    def __init__(self,balance = 5000):
-        self.__balance = balance 
-        
+    def display(self):
+        print("Name:", self.name)
+        print("Department:", self._department)
+        print("Salary:", self.__salary)
+
+
+e1 = EmployeeQ2("Ayana", "Finance", 45000)
+e1.display()
+
+
+# Q3. Private Variable
+
+class BankAccountQ3:
+
+    def __init__(self, balance=5000):
+        self.__balance = balance
+
     def display(self):
         return self.__balance
-    
-ac1 = BankAccount()
-# print(ac1.__balance)        
-    
-# # Q4. Getter Method
-# Create a Student class.
-# - Declare a private variable __marks = 85.
-# - Create a getter method get_marks().
-# - Access marks using the getter method.
-class Student:
-    
-    def __init__(self,marks = 85 ):
+
+
+ac1 = BankAccountQ3()
+
+try:
+    print(ac1.__balance)
+except AttributeError:
+    print("Private variable cannot be accessed directly!")
+
+print("Balance:", ac1.display())
+
+
+# Q4. Getter Method
+
+class StudentQ4:
+
+    def __init__(self, marks=85):
         self.__marks = marks
+
     def get_marks(self):
         return self.__marks
-    
-s1 = Student()
-print(s1.get_marks())      
-        
-# # Q5. Setter Method
-# Create a Mobile class.
-# - Declare a private variable __price = 15000.
-# - Create a setter method set_price().
-# - Update the mobile price to 18000.
-# - Display the updated price.
+
+
+s2 = StudentQ4()
+print("Marks:", s2.get_marks())
+
+
+# Q5. Setter Method
 
 class Mobile:
-    
-    def __init__(self,price = 15000):
+
+    def __init__(self, price=15000):
         self.__price = price
-        
+
     def get_price(self):
         return self.__price
-    
-    def set_price(self,price):
+
+    def set_price(self, price):
         self.__price = price
-    
+
+
 mob1 = Mobile()
 
-print(mob1.get_price())  
+print("Old Price:", mob1.get_price())
 
 mob1.set_price(18000)
 
-print("updated price : " , mob1.get_price())     
-        
-        
-# # Q6. Getter and Setter
-# Create a Product class.
-# - Declare a private variable __price.
-# - Create a getter method to access the price.
-# - Create a setter method to update the price.
-# - Create an object and update the price.
+print("Updated Price:", mob1.get_price())
+
+
+# Q6. Getter and Setter
+
 class Product:
-    
-    def __init__(self,price):
+
+    def __init__(self, price):
         self.__price = price
-        
+
     def get_price(self):
         return self.__price
-    
-    def set_value(self,price):
+
+    def set_price(self, price):
         self.__price = price
-    
+
+
 product1 = Product(1200)
 
-print("Old Price : ", product1.get_price()) 
+print("Old Price:", product1.get_price())
 
-product1.set_value(150)
+product1.set_price(150)
 
-print("Updated price " , product1.get_price())  
-        
+print("Updated Price:", product1.get_price())
 
-# # Q7. Bank Account
-# Create a BankAccount class with:
-# - Private variable __balance = 10000.
-# - Method deposit(amount) to deposit money.
-# - Method withdraw(amount) to withdraw money.
-# - Method check_balance() to display the balance.
-# - Do not allow withdrawal if the amount exceeds the balance.
 
-class BankAccount:
-    
-    def __init__(self,balance = 10000):
+# Q7. Bank Account
+
+class BankAccountQ7:
+
+    def __init__(self, balance=10000):
         self.__balance = balance
-        
-    def deposite(self,amount):
-        self.__balance += amount
-        print("deposited:",amount)
-    
-    def withdraw(self,amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
-            print("withdraw:",amount)
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print("Deposited:", amount)
         else:
-            print("Insufficient Balance ! ")
-            
+            print("Enter a valid deposit amount!")
+
+    def withdraw(self, amount):
+        if amount <= 0:
+            print("Enter a valid withdrawal amount!")
+        elif self.__balance >= amount:
+            self.__balance -= amount
+            print("Withdrawn:", amount)
+        else:
+            print("Insufficient Balance!")
+
     def check_balance(self):
-        print("Balance : " , self.__balance)
-             
-            
-ac1 = BankAccount()
+        print("Balance:", self.__balance)
 
-ac1.deposite(5000)
-ac1.withdraw(5000)
-ac1.check_balance()
-        
-# # Q8. Employee Salary
-# Create an Employee class with:
-# - Private variables __name and __salary.
-# - Create a getter method for salary.
-# - Create a setter method for salary.
-# - Allow salary updates only if the new salary is greater than zero.
 
-class Employee_salary:
-    
-    
-    def __init__(self,salary,name):
+ac2 = BankAccountQ7()
+
+ac2.deposit(5000)
+ac2.withdraw(5000)
+ac2.check_balance()
+
+
+# Q8. Employee Salary
+
+class EmployeeQ8:
+
+    def __init__(self, salary, name):
         self.__name = name
         self.__salary = salary
-        
-    def get_info(self):
-        return self.__salary   
-    def set_info(self):
+
+    def get_name(self):
         return self.__name
-    
-e1 = Employee(50000,"Vaishnavi")
-print("Original value", e1.get_info())
-print("Updated",e1.set_info())
-         
-# # Q9. ATM PIN Verification
-# Create an ATM class with:
-# - Private variable __pin = 1234.
-# - Create a method verify_pin(pin).
-# - Check whether the entered PIN
+
+    def get_salary(self):
+        return self.__salary
+
+    def set_salary(self, salary):
+        if salary > 0:
+            self.__salary = salary
+            print("Salary updated successfully!")
+        else:
+            print("Salary must be greater than zero!")
+
+
+e2 = EmployeeQ8(50000, "Vaishnavi")
+
+print("Employee:", e2.get_name())
+print("Original Salary:", e2.get_salary())
+
+e2.set_salary(60000)
+
+print("Updated Salary:", e2.get_salary())
+
+
+# Q9. ATM PIN Verification
 
 class ATM:
-    def __init__(self,pin = 1234):
+
+    def __init__(self, pin=1234):
         self.__pin = pin
-        
-    def verify_pin(self,pin):
+
+    def verify_pin(self, pin):
         if self.__pin == pin:
-            print("Correct pin ")
+            print("Correct PIN!")
         else:
-            print("Incorrect pin")
-enter = ATM()
-enter.verify_pin(123)            
+            print("Incorrect PIN!")
+
+
+atm1 = ATM()
+
+atm1.verify_pin(1234)
+atm1.verify_pin(123)
