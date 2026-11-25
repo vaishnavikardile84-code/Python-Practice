@@ -24,6 +24,7 @@ stud.update_marks(85)
 stud.display_details()
         
 # 2. Create a BankAccount class with a private balance. Add deposit(), withdraw() and check_balance() methods. Reject zero or negative transaction amounts.
+
 class BankAccount:
     
     def __init__(self,balance):
@@ -78,6 +79,7 @@ emp1.set_salary(35000)
 emp1.get_salary()             
                   
 # 4. Create a Mobile class with a private password. Add methods to verify the password and change it only when the old password is correct.
+
 class Mobile:
     def __init__(self,password):
         self.__password = password
@@ -91,8 +93,7 @@ class Mobile:
 pass1 = Mobile(123)  
 pass1.verify(123456)
 
-# 5. Create a Car class with private speed. Add accelerate() and brake() methods. Speed must never become
-# negative and must not exceed 180.
+# 5. Create a Car class with private speed. Add accelerate() and brake() methods. Speed must never become negative and must not exceed 180.
 
 class Car:
     
@@ -115,6 +116,7 @@ car1.acceleration(50)
 car1.car_break()           
                  
 # 6. Create a Product class with private name and price. Use @property to read the price and a setter to reject a price less than or equal to zero.
+
 class Product:
     def __init__(self,name,price):
         self.__name = name
@@ -139,6 +141,7 @@ print(product1.read_price)
 product1.read_price = -100
        
 # 7. Create a LibraryBook class with a private availability status. Add issue_book() and return_book() methods. A book cannot be issued twice without being returned.
+
 class Library_Book:
     def __init__(self,available):
         self.__available = available
@@ -181,10 +184,7 @@ expences = Wallet(500)
 expences.add_money(50)
 expences.spend(25)      
             
-# 9. Create an ElectricityBill class with private units. 
-# Add a setter that rejects
-# negative units and a method to
-# calculate the bill using your own slab rates.
+# 9. Create an ElectricityBill class with private units. Add a setter that rejects negative units and a method to calculate the bill using your own slab rates.
 
 class ElectricityBill:
     
@@ -213,8 +213,7 @@ bill.set_unit()
 bill.calculate()
 bill.get_unit()        
             
-# 10. Create a ShoppingCart class with a private total and private item count. Add methods to add an item, 
-# remove an item and display the cart summary. Do not allow the total or item count to become negative.
+# 10. Create a ShoppingCart class with a private total and private item count. Add methods to add an item, remove an item and display the cart summary. Do not allow the total or item count to become negative.
 class ShoppingCart:
     
     def __init__(self):
